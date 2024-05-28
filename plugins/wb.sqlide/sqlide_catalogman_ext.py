@@ -346,7 +346,7 @@ class ObjectManager(mforms.Box):
                     try:
                         field = field_obj['field']
                     except:
-                        if self.target_version.is_supported_mysql_version_at_least(8, 0, 0)  and type(field) is str:
+                        if self.target_version.is_supported_mysql_version_at_least(8, 0, 0)  and type(field_obj) is str:
                             field = field_obj.upper();
                         else:
                             field = field_obj
